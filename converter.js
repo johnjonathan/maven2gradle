@@ -27,8 +27,7 @@ function parseAndGenerate(){
         if (versionElems.length) {
             version = versionElems[0].innerHTML;
         }
-        grDeps.push(scope + ' ' + 'group: "' + group + ', name :"' + artifact + ', version: "' + version + '"');
-        //grDeps.push(scope + ' ' + '"' + group + ":" + artifact + ":" + version + '"');
+        grDeps.push(scope + ' ' + 'group: "' + group + ', name :"' + artifact + ', version: "' + version + '"');        
     }
     var grDepsOutput = grDeps.join('\n');
     if(shouldAddOuterClosure){
